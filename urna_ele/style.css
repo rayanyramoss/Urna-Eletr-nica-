@@ -1,0 +1,161 @@
+body{
+   width: 100%;
+   height: auto; 
+}
+
+
+#container{
+    display: flex;
+    background-color: #D9D9D9;
+    width: 75vw;
+    height: 70vh;
+    margin-top: 90px;
+    margin-left: 160px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+#container-pai, #container-filho{
+    display: inline-block;
+}
+
+
+#container-pai{
+    width: 45vw;
+    height: 400px;
+    background-color: rgb(245, 255, 255);
+    margin-left: 40px;
+    margin-top: 70px;
+    border-radius: 8px;
+}
+#eleitoral {
+    border: solid rgb(103, 103, 103) 3px;
+    width: 330px;
+    height: 90px;
+    margin-top: 15px;
+    margin-left: 46px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    border-radius: 5px;
+}
+
+.titulo-eleitoral {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.titulo-eleitoral img {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    margin-left: 35px;
+}
+
+.titulo-eleitoral h3 {
+    margin: 0;
+    line-height: 1.1;
+    font-size: 30px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-filho{
+    width: 22vw;
+    height: 350px;
+    background-color: black;
+    position: absolute;
+    right: 40px;      
+    top: 50%;        
+    transform: translateY(-50%);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+
+#botoes {
+    display: grid;
+    grid-template-columns: repeat(3, 70px); 
+    gap: 12px;
+    width: 250px;
+    margin: 50px auto;
+    margin-left: 54px;
+}
+
+.btn-num {
+    background-color: rgb(44, 42, 42);
+    width: 70px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    border: none;             
+    border-radius: 4px;
+
+    
+    box-shadow:
+      4px -4px 8px rgba(26, 26, 26, 0.55),    
+     -4px 4px 8px rgba(255, 255, 255, 0.135);
+}
+
+
+.btn-num:active {
+    box-shadow:
+      2px -2px 4px rgba(0, 0, 0, 0.421),
+     -2px 2px 4px rgba(255,255,255,0.12);
+    transform: translate(1px, -1px); 
+}
+
+
+.zero {
+    grid-column: 1 / span 3; 
+    width: 70px;
+    margin-left: 83px;
+}
+
+
+#branco {
+    background-color: white;
+    border: 2px solid #bdbdbd;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 4px;
+}
+
+#corrige {
+    background-color: #ff7b00; 
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 4px;
+}
+
+#confirma {
+    background-color: #1a8b3b; 
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    width: 77px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: -1px;
+}
+
+
+.btn-func {
+    height: 50px;     
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;  
+    margin-top: 10px;
+
+}
+
